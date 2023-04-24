@@ -1,8 +1,9 @@
 {
   "name": "@stabbed/nextjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "nextjs integration with stabbed.io",
   "main": "index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,11 +18,17 @@
   ],
   "author": "Arvid Hast",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "bugs": {
     "url": "https://github.com/stabbed-analytics/nextjs/issues"
   },
   "homepage": "https://github.com/stabbed-analytics/nextjs#readme",
   "dependencies": {
     "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
   }
 }
