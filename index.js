@@ -1,6 +1,6 @@
-import { getSavedExperimentData } from "./helpers/localstorage";
-import Test from "./Test";
-import Variant from "./Variant";
+import { getSavedExperimentData } from "@stabbed/nextjs/helpers/localstorage.js";
+import Test from "./Test.js";
+import Variant from "./Variant.js";
 
 const conversion = (name) => {
   const data = getSavedExperimentData(name);

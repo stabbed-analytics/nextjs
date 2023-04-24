@@ -1,5 +1,5 @@
-import { saveExperimentData } from "./helpers/localstorage";
 import { useEffect, useState } from "react";
+import { saveExperimentData } from "./helpers/localstorage.js";
 
 const randomInt = (number) => {
   return Math.floor(Math.random() * number);
