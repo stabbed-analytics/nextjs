@@ -1,6 +1,6 @@
 {
   "name": "@stabbed/nextjs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "nextjs integration with stabbed.io",
   "main": "index.js",
   "types": "dist/index.d.ts",
@@ -16,6 +16,7 @@
     "ab-testing",
     "stabbed"
   ],
+  "type": "module",
   "author": "Arvid Hast",
   "license": "MIT",
   "publishConfig": {
