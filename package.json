@@ -1,0 +1,27 @@
+{
+  "name": "@stabbed/nextjs",
+  "version": "1.0.0",
+  "description": "nextjs integration with stabbed.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stabbed-analytics/nextjs.git"
+  },
+  "keywords": [
+    "nextjs",
+    "ab-testing",
+    "stabbed"
+  ],
+  "author": "Arvid Hast",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stabbed-analytics/nextjs/issues"
+  },
+  "homepage": "https://github.com/stabbed-analytics/nextjs#readme",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
