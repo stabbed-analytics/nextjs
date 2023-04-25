@@ -1,4 +1,4 @@
-const Variant = ({ children }) => {
+const Variant = ({ children, name }) => {
   return children;
 };
 
