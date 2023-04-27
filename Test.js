@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
-import {
-  preventDuplicateRequest,
-  saveExperimentData,
-} from "./helpers/localstorage.js";
+import { saveExperimentData } from "./helpers/localstorage.js";
 
 const randomInt = (number) => {
   return Math.floor(Math.random() * number);
@@ -21,17 +18,8 @@ const Experiment = ({ name, children }) => {
   useEffect(() => {
     setIsHydrated(true);
 
-    preventDuplicateRequest(
-      {
-        w: process.env.NEXT_PUBLIC_STABBED_WORKSPACE_ID,
-        e: name,
-        v: variantName,
-      },
-      () => {
-        fetch(
-          `https://stabbed.io/api/collect?w=${process.env.NEXT_PUBLIC_STABBED_WORKSPACE_ID}&e=${name}&v=${variantName}`
-        );
-      }
+    fetch(
+      `https://stabbed.io/api/collect?w=${process.env.NEXT_PUBLIC_STABBED_WORKSPACE_ID}&e=${name}&v=${variantName}`
     );
   }, []);
 
