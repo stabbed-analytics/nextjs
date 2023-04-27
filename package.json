@@ -1,6 +1,6 @@
 {
   "name": "@stabbed/nextjs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "nextjs integration with stabbed.io",
   "main": "index.js",
   "types": "dist/index.d.ts",
