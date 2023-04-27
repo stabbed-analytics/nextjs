@@ -45,7 +45,7 @@ const safeSetSessionStorageObject = (key, data) => {
 };
 
 const preventDuplicateRequest = (object, callback) => {
-  const key = Object.stringify(object);
+  const key = JSON.stringify(object);
 
   if (safeGetSessionStorageObject(key)) return;
 
